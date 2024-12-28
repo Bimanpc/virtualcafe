@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Kafeneio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5eb;
+            color: #4a4a4a;
+        }
+        header {
+            background-color: #8c5830;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #6d4c41;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #8c5830;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Virtual Kafeneio</h1>
+        <p>Experience the warmth of a traditional Greek coffeehouse online.</p>
+    </header>
+
+    <nav>
+        <a href="#order">Order Coffee</a>
+        <a href="#discussions">Discussions</a>
+        <a href="#games">Play Games</a>
+    </nav>
+
+    <div class="container">
+        <section id="order" class="section">
+            <h2>Order Your Favorite Coffee</h2>
+            <p>Select from a variety of traditional Greek coffees and treats:</p>
+            <form>
+                <label for="coffee">Choose your coffee:</label>
+                <select id="coffee" name="coffee">
+                    <option value="greek">Greek Coffee</option>
+                    <option value="frappe">Frappe</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="cappuccino">Cappuccino</option>
+                </select>
+                <br><br>
+                <label for="sweets">Add a treat:</label>
+                <select id="sweets" name="sweets">
+                    <option value="baklava">Baklava</option>
+                    <option value="loukoumades">Loukoumades</option>
+                    <option value="koulouri">Koulouri</option>
+                </select>
+                <br><br>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <section id="discussions" class="section">
+            <h2>Join the Discussions</h2>
+            <p>Share stories, discuss news, or just chat with friends:</p>
+            <textarea rows="5" cols="50" placeholder="Start typing..."></textarea>
+            <br><br>
+            <button>Send Message</button>
+        </section>
+
+        <section id="games" class="section">
+            <h2>Play Traditional Games</h2>
+            <p>Enjoy classic board games like Tavli:</p>
+            <button>Start a Game</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Virtual Kafeneio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
